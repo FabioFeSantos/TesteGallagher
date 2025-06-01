@@ -1,6 +1,6 @@
 # Documentação do Diagrama de Entidades
 
-![Diagrama de Entidades](diagrama-entidades.png)
+![Diagrama de Entidades](docs/diagrama-entidades.png)
 
 ---
 
