@@ -1,3 +1,41 @@
+# Teste Técnico Gallagher - Fábio Ferreira dos Santos
+
+## Estruturação de Dados
+
+Este repositório contém a solução para a **Estruturação dos Dados**, proposta no processo seletivo para a vaga de **Analista de Dados**.
+
+## Objetivo
+
+Carregar as tabelas Orders, Customers e Web_events fornecida, realizar a ingestão, limpeza e tratamento/transformação dos dados, e estruturá-los em um banco de dados relacional (3º forma normal), tornando-os acessíveis para análises e consultas.
+
+
+## Tecnologias Utilizadas
+
+- Python 3.12: linguagem principal para manipulação de dados.
+- Pandas: biblioteca para leitura, limpeza e integração dos dados.
+- JSON: formato de entrada para dados estruturados de clientes.
+- Unidecode: biblioteca usada para remover acentuação dos nomes de estados.
+- Datetime: manipulação de datas com múltiplos formatos.
+- CSV: formato de saída das tabelas tratadas.
+
+
+
+## Estrutura do Projeto
+
+```
+├── doc/
+│   └── Diagrama.drawio      # Diagrama de relacionamento
+│   └── diagrama-entidades.png # Imagem do diagrama de relacionamento
+├── src/
+│   └── CODIGO_ETL.py      # Script principal de ETL
+├── sql/
+│   ├── create_table.sql          # Script de criação da tabela no SQL Server
+└── README.md                     # Este documento
+```
+
+---
+
+
 # Documentação do Diagrama de Entidades
 
 ![Diagrama de Entidades](docs/diagrama-entidades.png)
