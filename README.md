@@ -32,9 +32,9 @@
 | product_code   | VARCHAR  |               | Código do produto                  |
 | order_date     | DATE     |               | Data do pedido                     |
 | amount         | DECIMAL  |               | Valor do pedido                    |
-| currency       |
-| order_status   |
-| payment_method |
+| currency       | VARCHAR  |               | Moeda do valor do pedido           |
+| order_status   | VARCHAR  |               | Status do pedido                   |
+| payment_method | VARCHAR  |               | Método de pagamento do produto     |
 
 ---
 
