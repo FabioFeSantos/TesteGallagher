@@ -25,14 +25,16 @@
 
 - **Descrição:** Registra os pedidos realizados pelos clientes.
 
-| Campo        | Tipo     | Chave         | Descrição                          |
-|--------------|----------|---------------|------------------------------------|
-| order_id     | INT      | PK            | Identificador do pedido            |
-| customer_id  | INT      | FK (customers)| Cliente que fez o pedido           |
-| product_code | VARCHAR  |               | Código do produto                  |
-| order_date   | DATE     |               | Data do pedido                     |
-| amount       | DECIMAL  |               | Valor do pedido                    |
-
+| Campo          | Tipo     | Chave         | Descrição                          |
+|----------------|----------|---------------|------------------------------------|
+| order_id       | INT      | PK            | Identificador do pedido            |
+| customer_id    | INT      | FK (customers)| Cliente que fez o pedido           |
+| product_code   | VARCHAR  |               | Código do produto                  |
+| order_date     | DATE     |               | Data do pedido                     |
+| amount         | DECIMAL  |               | Valor do pedido                    |
+| currency       |
+| order_status   |
+| payment_method |
 ---
 
 ## Tabela: web_events
@@ -45,9 +47,9 @@
 | customer_id    | INT      | FK (customers)| Cliente relacionado ao evento      |
 | event_type     | VARCHAR  |               | Tipo do evento                     |
 | event_timestamp| DATETIME |               | Data/hora do evento                |
-| device         | VARCHAR  |               | Dispositivo utilizado              |
-| browser        | VARCHAR  |               | Navegador utilizado                |
-| source         | VARCHAR  |               | Origem do evento                   |
+| page_url       | VARCHAR  |               | Dispositivo utilizado              |
+| page           | VARCHAR  |               | Navegador utilizado                |
+| referrer       | VARCHAR  |               | Origem do evento                   |
 
 ---
 
@@ -55,11 +57,11 @@
 
 - **Descrição:** Lista os estados/regiões dos clientes.
 
-| Campo    | Tipo     | Chave | Descrição                |
-|----------|----------|-------|--------------------------|
-| state_id | INT      | PK    | Identificador do estado  |
-| name     | VARCHAR  |       | Nome do estado           |
-| code     | VARCHAR  |       | Código do estado         |
+| Campo      | Tipo     | Chave | Descrição                |
+|------------|----------|-------|--------------------------|
+| state_id   | INT      | PK    | Identificador do estado  |
+| state_name | VARCHAR  |       | Nome do estado           |
+| state_code | VARCHAR  |       | Código do estado         |
 
 ---
 
