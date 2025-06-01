@@ -1,0 +1,36 @@
+-- Tabela de Clientes
+CREATE TABLE customers (
+    id INT PRIMARY KEY,
+    full_name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    registration_date DATE,
+    state_id CHAR(2)
+);
+
+-- Tabela de Pedidos
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    product_code VARCHAR(50),
+    order_date DATE,
+    amount DECIMAL(12,2),
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
+);
+
+-- Tabela de Eventos Web
+CREATE TABLE web_events (
+    event_id INT PRIMARY KEY,
+    user_email VARCHAR(255),
+    event_type VARCHAR(100),
+    event_timestamp TIMESTAMP,
+    page VARCHAR(100),
+    referrer VARCHAR(100),
+    FOREIGN KEY (user_email) REFERENCES customers(email)
+);
+
+-- Tabela de Estados (normalizada)
+CREATE TABLE states (
+    state_id SERIAL PRIMARY KEY,
+    state_name VARCHAR(50),
+    state_code CHAR(2) UNIQUE
+);
