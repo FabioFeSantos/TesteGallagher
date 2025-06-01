@@ -35,6 +35,7 @@
 | currency       |
 | order_status   |
 | payment_method |
+
 ---
 
 ## Tabela: web_events
