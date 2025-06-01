@@ -71,8 +71,3 @@
 
 ---
 
-## Histórico de versões
-
-- **v1**: Estrutura inicial do modelo de dados.
-
----
