@@ -17,6 +17,8 @@ Carregar as tabelas Orders, Customers e Web_events fornecida, realizar a ingest�
 - Unidecode: biblioteca usada para remover acentuação dos nomes de estados.
 - Datetime: manipulação de datas com múltiplos formatos.
 - CSV: formato de saída das tabelas tratadas.
+-	Draw.io: editor de diagramas e fluxogramas.
+-	Github: plataforma de hospedagem de código-fonte e arquivos com controle de versão.
 
 
 
