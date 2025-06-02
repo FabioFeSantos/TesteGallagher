@@ -26,6 +26,7 @@ Carregar as tabelas Orders, Customers e Web_events fornecida, realizar a ingest�
 ├── doc/
 │   └── Diagrama.drawio      # Diagrama de relacionamento
 │   └── diagrama-entidades.png # Imagem do diagrama de relacionamento
+│   └── Relatório Final.docx # Arquivo contendo sintese da entrega e considerações
 ├── src/
 │   └── CODIGO_ETL.py      # Script principal de ETL
 ├── sql/
